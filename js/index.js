@@ -11,13 +11,13 @@ function criarCards(data){
     for (let i = 0; i < data.length; i++){
         const  item  = document.createElement("li")
 
-        const id = data[i].id
-        const img = data[i].img
+        const id    = data[i].id
+        const img   = data[i].img
         const name  = data[i].nameItem
-        const desc = data[i].description
+        const desc  = data[i].description
         const value = data[i].value
-        const add = data[i].addCart
-        const tag = data[i].tag
+        const add   = data[i].addCart
+        const tag   = data[i].tag
         
         const  tagDiv       = document.createElement("div")
         const  tagimg       = document.createElement("img")
@@ -58,18 +58,17 @@ function criarCards(data){
 criarCards(data)
 
 ///////////////////////////////////////////////
-///////////////////////////////////////////////
 //CARRINHO DE COMPRA:
 
-const aside = document.getElementById("aside")
-const cart = document.createElement('ul')
+const aside         = document.getElementById("aside")
+const cart          = document.createElement('ul')
 const valorDaCompra = document.createElement('h3')
 
 cart.classList.add("carrinho")
-
 aside.appendChild(cart);
 
 let dataCart = []
+console.log(dataCart)
 
 function criarCart(input){
     
@@ -81,21 +80,20 @@ function criarCart(input){
     const name  = input.nameItem
     const value = input.value
     
-
     const  tag2Div       = document.createElement("div")
     const  tag2Name      = document.createElement("p")
     const  tag2Value     = document.createElement("p")
     const  tag2RmvButton    = document.createElement("button")
 
-    tag2Name.innerHTML    = `${name}`
-    tag2Value.innerHTML   = `Preço: R$ ${value}`
+    tag2Name.innerHTML       = `${name}`
+    tag2Value.innerHTML      = `Preço: R$ ${value}`
     tag2RmvButton.innerHTML  = "Remover"
 
     tag2Div.classList.add("itemList")
     tag2Name.classList.add("nameItem")
     tag2Value.classList.add("value")
     tag2RmvButton.classList.add("rmvButton")
-    tag2RmvButton.addEventListener("click", rmvCart)
+    tag2RmvButton.addEventListener("click", (event)=>rmvCart(event))
 
 
     tag2Div.appendChild(tag2Name)
@@ -117,7 +115,6 @@ function criarCart(input){
 }
 
 ///////////////////////////////////////////////
-///////////////////////////////////////////////
 //Adicionando ao carrinho:
 function addCart(){
     const inn = event.target.id
@@ -130,9 +127,10 @@ function addCart(){
     }
 }
 
-function rmvCart() {
-    var newArray = dataCart.filter(event => event.id);
-    return dataCart = newArray
+function rmvCart(event) {
+    //var newArray = dataCart.filter(event => event.id);
+    //return dataCart = newArray
+    console.log(event.target.parentElement.parentElement.remove())
 }
 
 const totalPrice = document.createElement('h3')
@@ -142,12 +140,9 @@ aside.appendChild(totalPrice)
 function vtotal(dataCart) {
     
     let total = 0
-
-
     for (let i = 0; i < dataCart.length; i++){
         total += dataCart[i].value  
     }
-    
     return total
 }
 
