@@ -3,62 +3,66 @@
 const data = [
   {
     id: 1,
-    img: "../img/jaqueta.svg",
-    nameItem: "Lightweight Jacket",
+    img: "../img/IntelCorei7_3770.webp",
+    nameItem: "Processador Intel Core i9-10900K",
     description:
-      "Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...",
-    value: 100,
+      "BX8070110900K de 10 núcleos e 5.3GHz de frequência com gráfica integrada",
+    value: 3500,
     addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
+    tag: ["Processadores"],
   },
+
+  
   {
     id: 2,
-    img: "../img/gorro.svg",
-    nameItem: "Black Hat",
+    img: "../img/KingstonSQ500S37_480GB.webp",
+    nameItem: "Kingston SQ500S37/480G 480GB",
     description:
-      "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...",
-    value: 100,
+      "É útil para salvar programas e documentos com a sua capacidade de 480 GB",
+    value: 369,
     addCart: "Adicionar ao carrinho",
-    tag: ["Acessórios"],
+    tag: ["SSDs"],
   },
   {
     id: 3,
-    img: "../img/mascara.svg",
-    nameItem: "Mask",
+    img: "../img/WDGreen_SN350_240GB.webp",
+    nameItem: "Western Digital WD Green SN350 WDS240G2G0C 240GB",
     description:
-      "Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...",
-    value: 40,
+      "Interfaces de conexão: PCIe Gen 3.0, NVMe, PCIe Gen3x1, PCIe Gen3x2, PCIe Gen2x4, PCIe Gen2x2 e PCIe Gen2x1",
+    value: 250,
     addCart: "Adicionar ao carrinho",
-    tag: ["Acessórios"],
+    tag: ["SSDs"],
   },
+  
+  
   {
     id: 4,
-    img: "../img/camiseta_preta.svg",
-    nameItem: "T-Shirt",
+    img: "../img/IntelCorei5_10600K.webp",
+    nameItem: "Processador gamer Intel Core i5-10600K",
     description:
-      "Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...",
-    value: 100,
+      "BX8070110600K de 6 núcleos e 4.8GHz de frequência com gráfica integrada",
+    value: 1540,
     addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
+    tag: ["Processadores"],
   },
   {
     id: 5,
-    img: "../img/camiseta_branca.svg",
-    nameItem: "Short-Sleeve T-Shirt",
+    img: "../img/IntelCorei7_3770.webp",
+    nameItem: "Processador Intel Core i7-3770",
     description:
-      "Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...",
-    value: 100,
+      "CM8063701211600 de 4 núcleos e 3.9GHz de frequência com gráfica integrada",
+    value: 500,
     addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
+    tag: ["Processadores"],
   },
   {
     id: 6,
-    img: "../img/moletom.svg",
-    nameItem: "Champion Packable Jacket",
+    img: "../img/AMDRyzen_5_2600.webp",
+    nameItem: "Processador gamer AMD Ryzen 5 2600",
     description:
-      "Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...",
-    value: 100,
+      "YD2600BBAFBOX de 6 núcleos e 3.9GHz de frequência",
+    value: 1000,
     addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
+    tag: ["Processadores"],
   },
 ];

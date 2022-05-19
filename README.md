@@ -109,8 +109,8 @@ no header, por padrão iniciar em todos
 
 1.  Caso clique em **calças**, deve demostrar apenas os produtos que
     tenham a **tag calças** na vitrine
-2.  Caso clique em **camisetas**, deve demostrar apenas os produtos que
-    tenham a **tag camisetas** na vitrine
+2.  Caso clique em **Processadores**, deve demostrar apenas os produtos que
+    tenham a **tag Processadores** na vitrine
 
 **Barra de pesquisa** → Demostrar os produtos na vitrine de acordo com o
 que for escrito na barra de pesquisa
